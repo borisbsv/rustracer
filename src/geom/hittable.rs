@@ -11,7 +11,7 @@ impl Hittable for Vec<Box<dyn Hittable>> {
         let mut t: f64 = 0.0;
         let mut p: Vector = Vector::new(0.0, 0.0, 0.0);
         let mut n: Vector = Vector::new(0.0, 0.0, 0.0);
-        for h in self.iter() {
+        for h in self {
             let (ht, hp, hn) = h.hit(r, t_min, closest);
             if ht > 0.0 {
                 closest = ht;

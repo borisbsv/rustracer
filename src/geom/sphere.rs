@@ -42,6 +42,6 @@ impl Hittable for Sphere {
             return (t, p, (p - self.center).to_unit());
         }
 
-        return (0.0, Vector::new(0.0, 0.0, 0.0), Vector::new(0.0, 0.0, 0.0));
+        (0.0, Vector::new(0.0, 0.0, 0.0), Vector::new(0.0, 0.0, 0.0))
     }
 }
