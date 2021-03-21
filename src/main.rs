@@ -1,9 +1,9 @@
 mod geom;
 
-use geom::hittable::Hittable;
-use geom::ray::Ray;
-use geom::sphere::Sphere;
-use geom::vec::Vector;
+use geom::Hittable;
+use geom::Ray;
+use geom::Sphere;
+use geom::Vector;
 
 use std::fs::File;
 use std::io::Write;

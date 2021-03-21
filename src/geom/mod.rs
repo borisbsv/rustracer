@@ -3,7 +3,7 @@ mod ray;
 mod sphere;
 mod vec;
 
-use hittable::Hittable;
-use ray::Ray;
-use sphere::Sphere;
-use vec::Vector;
+pub use hittable::Hittable;
+pub use ray::Ray;
+pub use sphere::Sphere;
+pub use vec::Vector;
